@@ -1,0 +1,451 @@
+
+Commit complete.
+
+View CUSTOMER_ORDER created.
+
+Error starting at line : 528 in command -
+CREATE VIEW customer_order as 
+SELECT c.customerid,c.customername, c.customeraddress,
+c.customercity, c.customerstate, c.customerpostalcode, 
+o.orderid, o.orderdate--the result is the same as the one above
+FROM order_T o
+JOIN customer_t c
+ON c.customerid=o.customerid
+
+SELECT c.customerid,c.customername, c.customeraddress,
+c.customercity, c.customerstate, c.customerpostalcode, 
+c.orderid, c.orderdate, o.productid, o.orderquantity
+FROM customer_order c 
+right JOIN orderid o
+on c.orderid=o.orderid
+Error report -
+ORA-00933: SQL command not properly ended
+00933. 00000 -  "SQL command not properly ended"
+*Cause:    
+*Action:
+
+Error starting at line : 528 in command -
+CREATE VIEW customer_order as 
+SELECT c.customerid,c.customername, c.customeraddress,
+c.customercity, c.customerstate, c.customerpostalcode, 
+o.orderid, o.orderdate--the result is the same as the one above
+FROM order_T o
+JOIN customer_t c
+ON c.customerid=o.customerid
+
+SELECT c.customerid,c.customername, c.customeraddress,
+c.customercity, c.customerstate, c.customerpostalcode, 
+c.orderid, c.orderdate, o.productid, o.orderquantity
+FROM customer_order c 
+right JOIN orderline_t o
+on c.orderid=o.orderid
+on c.orderid=o.orderid
+Error report -
+ORA-00933: SQL command not properly ended
+00933. 00000 -  "SQL command not properly ended"
+*Cause:    
+*Action:
+
+Error starting at line : 528 in command -
+CREATE VIEW customer_order as 
+SELECT c.customerid,c.customername, c.customeraddress,
+c.customercity, c.customerstate, c.customerpostalcode, 
+o.orderid, o.orderdate--the result is the same as the one above
+FROM order_T o
+JOIN customer_t c
+ON c.customerid=o.customerid
+
+SELECT c.customerid,c.customername, c.customeraddress,
+c.customercity, c.customerstate, c.customerpostalcode, 
+c.orderid, c.orderdate, o.productid, o.orderquantity
+FROM customer_order c 
+right JOIN orderline_t o
+on c.orderid=o.orderid
+Error report -
+ORA-00933: SQL command not properly ended
+00933. 00000 -  "SQL command not properly ended"
+*Cause:    
+*Action:
+
+Error starting at line : 528 in command -
+CREATE VIEW customer_order as 
+SELECT c.customerid,c.customername, c.customeraddress,
+c.customercity, c.customerstate, c.customerpostalcode, 
+o.orderid, o.orderdate
+FROM order_T o
+JOIN customer_t c
+ON c.customerid=o.customerid
+
+SELECT c.customerid,c.customername, c.customeraddress,
+c.customercity, c.customerstate, c.customerpostalcode, 
+c.orderid, c.orderdate
+FROM customer_order c
+Error report -
+ORA-00933: SQL command not properly ended
+00933. 00000 -  "SQL command not properly ended"
+*Cause:    
+*Action:
+
+Error starting at line : 528 in command -
+CREATE VIEW customer_order as 
+SELECT c.customerid,c.customername, c.customeraddress,
+c.customercity, c.customerstate, c.customerpostalcode, 
+o.orderid, o.orderdate
+FROM order_T o
+JOIN customer_t c
+ON c.customerid=o.customerid
+
+SELECT c.customerid,c.customername, c.customeraddress,
+c.customercity, c.customerstate, c.customerpostalcode, 
+c.orderid, c.orderdate
+FROM customer_order c
+Error report -
+ORA-00933: SQL command not properly ended
+00933. 00000 -  "SQL command not properly ended"
+*Cause:    
+*Action:
+
+Error starting at line : 528 in command -
+CREATE VIEW customer_order as 
+SELECT c.customerid,c.customername, c.customeraddress,
+c.customercity, c.customerstate, c.customerpostalcode, 
+o.orderid, o.orderdate
+FROM order_T o
+JOIN customer_t c
+ON c.customerid=o.customerid
+
+SELECT c.customerid
+FROM customer_order c
+Error report -
+ORA-00933: SQL command not properly ended
+00933. 00000 -  "SQL command not properly ended"
+*Cause:    
+*Action:
+
+Error starting at line : 528 in command -
+CREATE VIEW customer_order as 
+SELECT c.customerid,c.customername, c.customeraddress,
+c.customercity, c.customerstate, c.customerpostalcode, 
+o.orderid, o.orderdate
+FROM order_T o
+JOIN customer_t c
+ON c.customerid=o.customerid
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 528 in command -
+CREATE VIEW customer_order as 
+SELECT c.customerid,c.customername, c.customeraddress,
+c.customercity, c.customerstate, c.customerpostalcode, 
+o.orderid, o.orderdate
+FROM order_T o
+JOIN customer_t c
+ON c.customerid=o.customerid
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+View CUSTOMER_ORDER_ORDERLINE created.
+
+
+View CUSTOMER_ORDER_ORDERLINE_PRODUCT created.
+
+
+Error starting at line : 572 in command -
+CREATE table ProductNew_T like product_t
+Error report -
+ORA-00922: missing or invalid option
+00922. 00000 -  "missing or invalid option"
+*Cause:    
+*Action:
+
+Table PRODUCTNEW_T created.
+
+
+Error starting at line : 573 in command -
+Update productnew_t
+set productstandardprice = 1800 where productiondescription = 'Dining Table'
+Error at Command Line : 574 Column : 39
+Error report -
+SQL Error: ORA-00904: "PRODUCTIONDESCRIPTION": invalid identifier
+00904. 00000 -  "%s: invalid identifier"
+*Cause:    
+*Action:
+
+Error starting at line : 572 in command -
+CREATE table ProductNew_T as (select * from product_t)
+Update productnew_t
+set productstandardprice = 1800 where productdescription = 'Dining Table'
+Error report -
+ORA-00905: missing keyword
+00905. 00000 -  "missing keyword"
+*Cause:    
+*Action:
+
+1 row updated.
+
+
+Rollback complete.
+
+SP2-0158: unknown SET option beginning "productsta..."
+>>Query Run In:Query Result
+
+1 row updated.
+
+
+Commit complete.
+
+
+Rollback complete.
+
+SP2-0158: unknown SET option beginning "productsta..."
+>>Query Run In:Query Result 1
+
+ERROR:
+ORA-04043: object system does not exist
+Name                      Null?    Type           
+------------------------- -------- -------------- 
+OWNER                     NOT NULL VARCHAR2(128)  
+TABLE_NAME                NOT NULL VARCHAR2(128)  
+TABLESPACE_NAME                    VARCHAR2(30)   
+CLUSTER_NAME                       VARCHAR2(128)  
+IOT_NAME                           VARCHAR2(128)  
+STATUS                             VARCHAR2(8)    
+PCT_FREE                           NUMBER         
+PCT_USED                           NUMBER         
+INI_TRANS                          NUMBER         
+MAX_TRANS                          NUMBER         
+INITIAL_EXTENT                     NUMBER         
+NEXT_EXTENT                        NUMBER         
+MIN_EXTENTS                        NUMBER         
+MAX_EXTENTS                        NUMBER         
+PCT_INCREASE                       NUMBER         
+FREELISTS                          NUMBER         
+FREELIST_GROUPS                    NUMBER         
+LOGGING                            VARCHAR2(3)    
+BACKED_UP                          VARCHAR2(1)    
+NUM_ROWS                           NUMBER         
+BLOCKS                             NUMBER         
+EMPTY_BLOCKS                       NUMBER         
+AVG_SPACE                          NUMBER         
+CHAIN_CNT                          NUMBER         
+AVG_ROW_LEN                        NUMBER         
+AVG_SPACE_FREELIST_BLOCKS          NUMBER         
+NUM_FREELIST_BLOCKS                NUMBER         
+DEGREE                             VARCHAR2(10)   
+INSTANCES                          VARCHAR2(10)   
+CACHE                              VARCHAR2(5)    
+TABLE_LOCK                         VARCHAR2(8)    
+SAMPLE_SIZE                        NUMBER         
+LAST_ANALYZED                      DATE           
+PARTITIONED                        VARCHAR2(3)    
+IOT_TYPE                           VARCHAR2(12)   
+TEMPORARY                          VARCHAR2(1)    
+SECONDARY                          VARCHAR2(1)    
+NESTED                             VARCHAR2(3)    
+BUFFER_POOL                        VARCHAR2(7)    
+FLASH_CACHE                        VARCHAR2(7)    
+CELL_FLASH_CACHE                   VARCHAR2(7)    
+ROW_MOVEMENT                       VARCHAR2(8)    
+GLOBAL_STATS                       VARCHAR2(3)    
+USER_STATS                         VARCHAR2(3)    
+DURATION                           VARCHAR2(15)   
+SKIP_CORRUPT                       VARCHAR2(8)    
+MONITORING                         VARCHAR2(3)    
+CLUSTER_OWNER                      VARCHAR2(128)  
+DEPENDENCIES                       VARCHAR2(8)    
+COMPRESSION                        VARCHAR2(8)    
+COMPRESS_FOR                       VARCHAR2(30)   
+DROPPED                            VARCHAR2(3)    
+READ_ONLY                          VARCHAR2(3)    
+SEGMENT_CREATED                    VARCHAR2(3)    
+RESULT_CACHE                       VARCHAR2(7)    
+CLUSTERING                         VARCHAR2(3)    
+ACTIVITY_TRACKING                  VARCHAR2(23)   
+DML_TIMESTAMP                      VARCHAR2(25)   
+HAS_IDENTITY                       VARCHAR2(3)    
+CONTAINER_DATA                     VARCHAR2(3)    
+INMEMORY                           VARCHAR2(8)    
+INMEMORY_PRIORITY                  VARCHAR2(8)    
+INMEMORY_DISTRIBUTE                VARCHAR2(15)   
+INMEMORY_COMPRESSION               VARCHAR2(17)   
+INMEMORY_DUPLICATE                 VARCHAR2(13)   
+DEFAULT_COLLATION                  VARCHAR2(100)  
+DUPLICATED                         VARCHAR2(1)    
+SHARDED                            VARCHAR2(1)    
+EXTERNAL                           VARCHAR2(3)    
+CELLMEMORY                         VARCHAR2(24)   
+CONTAINERS_DEFAULT                 VARCHAR2(3)    
+CONTAINER_MAP                      VARCHAR2(3)    
+EXTENDED_DATA_LINK                 VARCHAR2(3)    
+EXTENDED_DATA_LINK_MAP             VARCHAR2(3)    
+INMEMORY_SERVICE                   VARCHAR2(12)   
+INMEMORY_SERVICE_NAME              VARCHAR2(1000) 
+CONTAINER_MAP_OBJECT               VARCHAR2(3)    
+MEMOPTIMIZE_READ                   VARCHAR2(8)    
+MEMOPTIMIZE_WRITE                  VARCHAR2(8)    
+HAS_SENSITIVE_COLUMN               VARCHAR2(3)    
+
+Function GET_PRICE compiled
+
+LINE/COL  ERROR
+--------- -------------------------------------------------------------
+4/5       PLS-00103: Encountered the symbol "BEGIN" when expecting one of the following:     := ; not null default character The symbol ";" was substituted for "BEGIN" to continue. 
+8/9       PLS-00103: Encountered the symbol "RETURN" when expecting one of the following:     . ( * @ % & - + ; / at for mod remainder rem    <an exponent (**)> and or group having intersect minus order    start union where connect || multiset The symbol "." was substituted for "RETURN" to continue. 
+9/5       PLS-00103: Encountered the symbol "END" when expecting one of the following:     . ( * % & - + ; / at for mod remainder rem <an exponent (**)>    and or group having intersect minus order start union where    connect || multiset 
+Errors: check compiler log
+
+Error starting at line : 586 in command -
+CREATE FUNCTION get_price(product_id in number)
+    return number
+    is price number(11,2);
+    begin
+        select productstandardprice into price
+        from product_t
+        where customerid=product_id
+        return(price);
+    end
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Function GET_PRICE compiled
+
+LINE/COL  ERROR
+--------- -------------------------------------------------------------
+5/9       PL/SQL: SQL Statement ignored
+8/9       PL/SQL: ORA-00933: SQL command not properly ended
+9/7       PLS-00103: Encountered the symbol "end-of-file" when expecting one of the following:     ; <an identifier> <a double-quoted delimited-identifier>    current delete exists prior <a single-quoted SQL string> The symbol ";" was substituted for "end-of-file" to continue. 
+Errors: check compiler log
+
+Function GET_PRICE compiled
+
+LINE/COL  ERROR
+--------- -------------------------------------------------------------
+5/9       PL/SQL: SQL Statement ignored
+8/9       PL/SQL: ORA-00933: SQL command not properly ended
+Errors: check compiler log
+
+Function GET_PRICE compiled
+
+LINE/COL  ERROR
+--------- -------------------------------------------------------------
+5/9       PL/SQL: SQL Statement ignored
+8/9       PL/SQL: ORA-00933: SQL command not properly ended
+Errors: check compiler log
+
+Function GET_PRICE compiled
+
+
+Function GET_PRICE compiled
+
+
+Function GET_PRICE compiled
+
+
+Procedure UPDATE_PRICE compiled
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+Error starting at line : 617 in command -
+CREATE table orders_audit_t
+(order_id number(11,0) not null,
+quantity_before number(10,0)
+quantity_after number(10,0)
+username varchar2(50)
+constraint order_audit_pk primary key (order_id)
+Error report -
+ORA-00907: missing right parenthesis
+00907. 00000 -  "missing right parenthesis"
+*Cause:    
+*Action:
+
+Error starting at line : 617 in command -
+CREATE table orders_audit_t
+(order_id number(11,0) not null,
+quantity_before number(10,0)
+quantity_after number(10,0)
+username varchar2(50)
+constraint order_audit_pk primary key (order_id))
+Error report -
+ORA-00907: missing right parenthesis
+00907. 00000 -  "missing right parenthesis"
+*Cause:    
+*Action:
+
+Table ORDERS_AUDIT_T created.
+
+
+Trigger ORDER_AFTER_UPDATE compiled
+
+LINE/COL  ERROR
+--------- -------------------------------------------------------------
+8/10      PLS-00049: bad bind variable 'NEW.ORDER_ID'
+8/25      PLS-00049: bad bind variable 'OLD.QUANTITY'
+8/39      PLS-00049: bad bind variable 'NEW.QUANTITY'
+Errors: check compiler log
+
+Trigger ORDER_AFTER_UPDATE compiled
+
+LINE/COL  ERROR
+--------- -------------------------------------------------------------
+8/10      PLS-00049: bad bind variable 'NEW.ORDER_ID'
+8/25      PLS-00049: bad bind variable 'OLD.QUANTITY'
+8/39      PLS-00049: bad bind variable 'NEW.QUANTITY'
+Errors: check compiler log
+
+Trigger ORDER_AFTER_UPDATE compiled
+
+LINE/COL  ERROR
+--------- -------------------------------------------------------------
+5/9       PL/SQL: SQL Statement ignored
+5/21      PL/SQL: ORA-00942: table or view does not exist
+Errors: check compiler log
+
+Trigger ORDER_AFTER_UPDATE compiled
+
+1 row updated.
+
+Error starting at line : 642 in command -
+update orderline_t
+set orderedquantity = 6
+where productid=3 and orderid=1003
+update orderline_t
+set orderedquantity = 20
+where productid=6 and orderid=1004
+update orderline_t
+set orderedquantity = 6
+where productid=1 and orderid=1007
+Error at Command Line : 645 Column : 1
+Error report -
+SQL Error: ORA-00933: SQL command not properly ended
+00933. 00000 -  "SQL command not properly ended"
+*Cause:    
+*Action:
+
+1 row updated.
+
+1 row updated.
+
+1 row updated.
